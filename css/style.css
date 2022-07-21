@@ -18,6 +18,7 @@ body {
     background-color: rgb(41, 1, 51);
     color: white;
     height: 55px;
+    z-index: 1;
 }
 
 .navbar ul {
