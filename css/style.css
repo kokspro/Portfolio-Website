@@ -72,20 +72,37 @@ img {
 
 .intro {
     color: white;
-    padding-top: 20%;
-
+    margin: 150px 0px;
+    font-size: 1.75rem;    
 }
 
-.grid a {
-    text-align: center;
-    margin: 25% auto 10%;
+.grid {
     display: grid;
-    max-width: 800px;
-    height: 50vh;
-    border: 1px solid white;
-    grid-row-gap: 100px;
+    max-width: 900px;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: solid 1px white; */
+    gap: 3rem;
+    margin-inline: auto;
+    padding-block: 2rem;
+
+}
+article {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    color: white;
+    border: solid white 1px;
+    height: auto;
 }
 
+article h3, article p {
+    text-align: center;
+    margin: 10px;
+}
+
+article p {
+    padding: 10px 10px 100px;
+}
 footer {
     position: sticky;
     bottom: 0;
@@ -95,4 +112,33 @@ footer {
     background-color: rgb(41, 1, 51);
     text-align: center;
     color: white;
+    margin-top: 100px;
+}
+
+.button {
+    background-color: rgb(41, 1, 51);
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: background-color .5s ease-in-out;
+
+}
+
+.button:hover {
+    background-color: magenta;
+    color: black;
+}
+
+.button-try-it {
+    position: absolute;
+    bottom: 10px;
+    left: 10px; 
+}
+
+.button-code {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
 }
