@@ -94,6 +94,7 @@ article {
     color: white;
     border: solid white 1px;
     height: auto;
+    margin-bottom: 15px;
 }
 
 article h3, article p {
